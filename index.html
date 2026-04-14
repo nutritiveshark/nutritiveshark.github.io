@@ -99,6 +99,50 @@
     .btn.secondary{background:rgba(233,223,207,.06);border-color:rgba(233,223,207,.14);color:#f3efe7}
     .btn.secondary:hover{background:rgba(255,255,255,.10)}
 
+    .link-actions{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:18px;
+    }
+    .link-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:flex-start;
+      gap:10px;
+      width:auto;
+      max-width:100%;
+      min-width:0;
+      padding:10px 14px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.05);
+      color:#f3efe7;
+      font-size:.92rem;
+      font-weight:600;
+      line-height:1.2;
+      text-decoration:none;
+      transition:.2s ease;
+    }
+    .link-btn:hover{
+      background:rgba(255,255,255,.10);
+      color:#ffffff;
+    }
+    .link-btn .icon-wrap{
+      width:16px;
+      height:16px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      flex:0 0 16px;
+    }
+    .link-btn .icon-wrap svg{
+      width:16px !important;
+      height:16px !important;
+      display:block;
+    }
+
+
     .stats{
       display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
     }
@@ -327,7 +371,7 @@
         </h1>
 
         <p>
-          我本科就读于对外经济贸易大学金融数学专业，并已获得香港大学数据科学硕士录取。我关注量化研究、数据分析、金融风险建模，以及机器学习在金融领域的应用。
+          欢迎！这是我的个人主页。目前还在施工，因为我还在努力让它变得更加充实和丰富。<br><span class="en">Welcome! This is my personal homepage. It is still under construction, as I am still working to make it more substantial and complete.</span><br><br>我本科就读于对外经济贸易大学金融数学专业，并已获得香港大学数据科学硕士录取。我关注量化研究、数据分析、金融风险建模，以及机器学习在金融领域的应用。
           <span class="en">I studied Financial Mathematics at UIBE and have been admitted to the Master of Data Science program at The University of Hong Kong. My interests lie in quantitative research, data analytics, financial risk modeling, and the application of machine learning in finance.</span>
         </p>
 
@@ -366,6 +410,17 @@
             <div class="contact-item">📍 来自北京 · <span>Based in Beijing</span></div>
             <div class="contact-item">📞 +86 18610408009</div>
             <div class="contact-item">✉ 13661332977@163.com</div>
+          </div>
+
+          <div class="link-actions">
+            <a class="link-btn" href="https://www.linkedin.com/in/jierui-sun" target="_blank" rel="noopener noreferrer">
+              <span class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" focusable="false" style="width:16px;height:16px;display:block;">
+                  <path fill="#0A66C2" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.38 4.27 5.48v6.26zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14z"></path>
+                </svg>
+              </span>
+              <span>View LinkedIn Profile</span>
+            </a>
           </div>
 
           <div class="mini-panel">
@@ -590,9 +645,6 @@
           <span class="skill">R</span>
           <span class="skill">SQL</span>
           <span class="skill">MATLAB</span>
-          <span class="skill">Pandas</span>
-          <span class="skill">NumPy</span>
-          <span class="skill">Matplotlib</span>
           <span class="skill">LaTeX</span>
           <span class="skill">MySQL</span>
           <span class="skill">Jupyter</span>
@@ -613,6 +665,7 @@
           <span class="skill">NumPy</span>
           <span class="skill">Pandas</span>
           <span class="skill">SciPy.stats</span>
+          <span class="skill">Matplotlib</span>
           <span class="skill">os</span>
           <span class="skill">sys</span>
           <span class="skill">re</span>
